@@ -1,5 +1,7 @@
-package br.ufscar.dc.compiladores.alguma.sintatico;
+package br.ufscar.dc.compiladores.alguma.semantico;
 
-public class LASemantico {
+import br.ufscar.dc.compiladores.alguma.sintatico.AlgumaBaseListener;
+
+public class LASemantico extends AlgumaBaseListener<Void>{
     
 }
