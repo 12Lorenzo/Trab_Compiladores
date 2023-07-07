@@ -1,5 +1,5 @@
 // Generated from java-escape by ANTLR 4.11.1
-package br.ufscar.dc.compiladores.alguma.sintatico;
+package br.ufscar.dc.compiladores.alguma.semantico;
 import org.antlr.v4.runtime.atn.*;
 import org.antlr.v4.runtime.dfa.DFA;
 import org.antlr.v4.runtime.*;

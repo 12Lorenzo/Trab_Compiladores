@@ -1,4 +1,4 @@
-package br.ufscar.dc.compiladores.alguma.sintatico;
+package br.ufscar.dc.compiladores.alguma.semantico;
 
 import static org.junit.Assert.assertTrue;
 
