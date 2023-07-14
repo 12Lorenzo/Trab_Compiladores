@@ -11,10 +11,9 @@ import br.ufscar.dc.compiladores.alguma.semantico.AlgumaParser.ExpressaoContext;
 import br.ufscar.dc.compiladores.alguma.semantico.AlgumaParser.FatorContext;
 import br.ufscar.dc.compiladores.alguma.semantico.AlgumaParser.Fator_logicoContext;
 import br.ufscar.dc.compiladores.alguma.semantico.AlgumaParser.ParcelaContext;
-import br.ufscar.dc.compiladores.alguma.semantico.AlgumaParser.Parcela_logicaContext;
 import br.ufscar.dc.compiladores.alguma.semantico.AlgumaParser.TermoContext;
 import br.ufscar.dc.compiladores.alguma.semantico.AlgumaParser.Termo_logicoContext;
-import br.ufscar.dc.compiladores.alguma.semantico.AlgumaParser;
+
 
 
 public class AlgumaSemanticoUtil {
@@ -36,7 +35,6 @@ public class AlgumaSemanticoUtil {
                 ret = TabelaSimbolos.TipoAlguma.INVALIDO;
             }
         }
-        //SemanticoUtils.adicionarErroSemantico(ctx.start, "9" +ctx.getText() + ret);
         return ret;
     }
 
@@ -51,7 +49,6 @@ public class AlgumaSemanticoUtil {
             }
         }
 
-        //SemanticoUtils.adicionarErroSemantico(ctx.start, "8" +ctx.getText() + ret);
         return ret;
     }
 
@@ -68,7 +65,7 @@ public class AlgumaSemanticoUtil {
             ret = TabelaSimbolos.TipoAlguma.LOGICO;
         }
 
-        //SemanticoUtils.adicionarErroSemantico(ctx.start, "7" +ctx.getText() + ret);
+        
         return ret;
     }
 
@@ -92,7 +89,7 @@ public class AlgumaSemanticoUtil {
             ret = verificarTipo(escopos, ctx.exp_aritmetica(0));
         }
 
-        //SemanticoUtils.adicionarErroSemantico(ctx.start, "6" +ctx.getText() + ret);
+        
         return ret;
     }
 
@@ -107,7 +104,7 @@ public class AlgumaSemanticoUtil {
             }
         }
 
-        //SemanticoUtils.adicionarErroSemantico(ctx.start, "5" +ctx.getText() + ret);
+        
         return ret;
     }
 
@@ -124,7 +121,7 @@ public class AlgumaSemanticoUtil {
                 ret = TabelaSimbolos.TipoAlguma.INVALIDO;
             }
         }
-        //SemanticoUtils.adicionarErroSemantico(ctx.start, "4" +ctx.getText() + ret);
+        
         return ret;
     }
     public static TabelaSimbolos.TipoAlguma verificarTipo(Escopo escopos, AlgumaParser.FatorContext ctx) {
@@ -138,7 +135,7 @@ public class AlgumaSemanticoUtil {
                 ret = TabelaSimbolos.TipoAlguma.INVALIDO;
             }
         }
-        //SemanticoUtils.adicionarErroSemantico(ctx.start, "3" +ctx.getText() + ret);
+        
         return ret;
     }
     public static TabelaSimbolos.TipoAlguma verificarTipo(Escopo escopos, AlgumaParser.ParcelaContext ctx) {
@@ -148,10 +145,9 @@ public class AlgumaSemanticoUtil {
             ret = verificarTipo(escopos, ctx.parcela_nao_unario());
         }
         else {
-            //SemanticoUtils.adicionarErroSemantico(ctx.start, "ta aq: " + ctx.getText() + verificarTipo(escopos, ctx.parcela_unario()));
+            
             ret = verificarTipo(escopos, ctx.parcela_unario());
         }
-        //SemanticoUtils.adicionarErroSemantico(ctx.start, "2" + ctx.getText() + ret);
         return ret;
     }
 

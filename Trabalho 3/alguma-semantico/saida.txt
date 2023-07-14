@@ -1,1 +1,4 @@
+Linha 5: tipo inteir nao declarado
+Linha 8: identificador nomw nao declarado
+Linha 9: identificador idades nao declarado
 Fim da compilacao
