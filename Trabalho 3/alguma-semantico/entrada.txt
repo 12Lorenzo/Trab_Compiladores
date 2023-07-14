@@ -1,32 +1,19 @@
-:DECLARACOES
-numero1:INTEIRO
-numero2:INTEIRO
-numero3:INTEIRO
-aux:INTEIRO
+algoritmo
+	declare
+		quilometragem, consumo,
+		abastecimento1, abastecimento2, num1, num2: inteiro
 
-:ALGORITMO
-% Coloca 3 números em ordem crescente
-LER numero1
-LER numero2
-LER numero3
-SE numero1 > numero2 ENTAO
-   INICIO
-      ATRIBUIR 2+3-4+5-6*5-1 A aux
-      ATRIBUIR numero1 A numero2
-      ATRIBUIR aux A numero1
-   FIM 
-SE numero1 > numero3 E numero2 <= numero4 E numero1 > 3 OU numero2 <> numero4 ENTAO
-   INICIO
-      ATRIBUIR (numero3) A aux
-      ATRIBUIR numero1 A numero3
-      ATRIBUIR aux A numero1
-   FIM
-SE numero2 > numero3 ENTAO
-   INICIO
-      ATRIBUIR numero3 A aux
-      ATRIBUIR numero2 A numero3
-      ATRIBUIR aux A numero2
-   FIM
-IMPRIMIR numero1
-IMPRIMIR numero2
-IMPRIMIR numero3
+	{ obtenção da quilometragem e litros consumidos }
+	leia(quilometragem)
+	leia(abastecimento1, abastecimento2)
+
+	{ cálculo do consumo }
+	consumo <- abastecimento2
+	num1 <- 1
+	num2 <- 2
+	
+	{ saída do resultado calculado }
+	escreva(consumo, " km/l")
+	escreva(num1)
+
+fim_algoritmo

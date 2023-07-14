@@ -5,14 +5,17 @@ import java.util.Map;
 
 public class TabelaSimbolos {
     public enum TipoAlguma {
+        //Tipo de variavel
         INTEIRO,
         REAL,
         LITERAL,
         LOGICO,
+        TIPO,
+        //Estruturas
         FUNCAO,
         PROCEDIMENTO,
-        REGISTRO,
-        PONTEIRO,
+        PONTEIRO, 
+        IDENT,
         INVALIDO
     }
     
