@@ -26,7 +26,7 @@ Para compilar e executar este programa, primeiro você deve entrar na pasta cham
 
 ```
 
-*Importante, talvez de um problema na compilação do alguma-semantico, caso isso aconteça digitar:*
+*Importante* Talvez de um problema na compilação do alguma-semantico, caso isso aconteça digitar:
 ```
-java -cp /caminho/alguma-semantico-1.0-SNAPSHOT-jar-with-dependencies.jar br.ufscar.dc.compiladores.alguma.semantico.Principal
+java -cp /caminho/alguma-semantico-1.0-SNAPSHOT-jar-with-dependencies.jar br.ufscar.dc.compiladores.alguma.semantico.Principal /caminho/entrada.txt /caminho/saida.txt
 ```
