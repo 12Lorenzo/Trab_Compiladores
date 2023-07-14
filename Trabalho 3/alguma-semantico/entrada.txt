@@ -1,19 +1,15 @@
 algoritmo
 	declare
-		quilometragem, consumo,
-		abastecimento1, abastecimento2, num1, num2: inteiro
+		nome: literal
+	declare
+		idade: inteir
 
-	{ obtenção da quilometragem e litros consumidos }
-	leia(quilometragem)
-	leia(abastecimento1, abastecimento2)
+	{ leitura de nome e idade do teclado }
+	leia(nome)
+	leia(idades)
 
-	{ cálculo do consumo }
-	consumo <- abastecimento2
-	num1 <- 1
-	num2 <- 2
-	
-	{ saída do resultado calculado }
-	escreva(consumo, " km/l")
-	escreva(num1)
+	{ saída da mensagem na tela }
+	escreva(nome, " tem ", idade, " anos.")
 
 fim_algoritmo
+

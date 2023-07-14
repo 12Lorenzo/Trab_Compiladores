@@ -22,14 +22,11 @@ Para compilar e executar este programa, primeiro você deve entrar na pasta cham
   mvn package
 ```
 ```
-  java -jar target/alguma-sintatico-1.0-SNAPSHOT-jar-with-dependencies.jar [caminho para arquivo de entrada] [caminho para o arquivo de saída]
+  java -jar target/alguma-semantico-1.0-SNAPSHOT-jar-with-dependencies.jar /caminho/entrada.txt /caminho/saida.txt
 
-  java -jar target/alguma-semantico-1.0-SNAPSHOT-jar-with-dependencies.jar /home/lorenzo/Downloads/Ciencia da Computacao UFSCar/Semestre 9/Compiladores/Trabalho/Trab_Compiladores/Trabalho 3/alguma-semantico/entrada.text /home/lorenzo/Downloads/Ciencia da Computacao UFSCar/Semestre 9/Compiladores/Trabalho/Trab_Compiladores/Trabalho 3/alguma-semantico/saida.tx
+```
 
-  /home/lorenzo/Downloads/Ciencia da Computacao UFSCar/Semestre 9/Compiladores/Trabalho/Trab_Compiladores/Trabalho 2/alguma-sintatico/entrada.txt
-
-  /home/lorenzo/Downloads/Ciencia da Computacao UFSCar/Semestre 9/Compiladores/Trabalho/Trab_Compiladores/Trabalho 2/alguma-sintatico/saida.txt
-
-  B
-
-  /home/lorenzo/Downloads/Ciencia da Computacao UFSCar/Semestre 9/Compiladores/Trabalhos/Trabalho B/Compiladores/trabalho3/LA-semantico/entrada.txt /home/lorenzo/Downloads/Ciencia da Computacao UFSCar/Semestre 9/Compiladores/Trabalhos/Trabalho B/Compiladores/trabalho3/LA-semantico/saida.txt
+*Importante, talvez de um problema na compilação do alguma-semantico, caso isso aconteça digitar:*
+```
+java -cp /caminho/alguma-semantico-1.0-SNAPSHOT-jar-with-dependencies.jar br.ufscar.dc.compiladores.alguma.semantico.Principal
+```
