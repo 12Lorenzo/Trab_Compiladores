@@ -26,8 +26,14 @@ Para compilar e executar este programa, primeiro você deve entrar na pasta cham
 
 ```
 
-*Importante* <br>
+*Importante 1* <br>
 Talvez de um problema na compilação do alguma-semantico, caso isso aconteça digitar:
 ```
 java -cp /caminho/alguma-semantico-1.0-SNAPSHOT-jar-with-dependencies.jar br.ufscar.dc.compiladores.alguma.semantico.Principal /caminho/entrada.txt /caminho/saida.txt
+```
+
+*Importante 2* <br>
+```
+Para executar os testes tem que colocar no lugar da execução do .jar o seguinte trecho:
+java -cp /caminho/alguma-semantico-1.0-SNAPSHOT-jar-with-dependencies.jar br.ufscar.dc.compiladores.alguma.semantico.Principal
 ```
